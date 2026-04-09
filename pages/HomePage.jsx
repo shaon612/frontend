@@ -5,7 +5,7 @@ import { useStations } from '../hooks/useStations'
 import StationCard from '../components/StationCard'
 import LoadingSpinner from '../components/LoadingSpinner'
 import ErrorMessage from '../components/ErrorMessage'
-import { toBengaliNumber } from '../utils'
+import { toBengaliNumber } from '../src/utils'
 
 export default function HomePage() {
   const { stations, loading, error, refresh } = useStations()
