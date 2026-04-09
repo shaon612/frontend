@@ -1,7 +1,7 @@
 // স্টেশন ফর্ম মডাল - নতুন পাম্প যোগ করা ও সম্পাদনা করার জন্য
 import { useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
-import { addStation, updateStation } from '../api'
+import { addStation, updateStation } from '../src/api'
 
 export default function StationFormModal({ station, onClose, onSuccess }) {
   // ফর্মের অবস্থা
