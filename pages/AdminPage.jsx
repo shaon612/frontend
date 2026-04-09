@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
 import { fetchStations, updateStation } from '../api'
 import StationFormModal from '../components/StationFormModal'
-import { timeAgo, toBengaliNumber } from '../utils'
+import { fetchStations, updateStation } from '../src/api'
+import { timeAgo, toBengaliNumber } from '../src/utils'
 
 export default function AdminPage() {
   const [stations,    setStations]    = useState([])
