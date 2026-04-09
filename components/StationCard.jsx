@@ -3,7 +3,7 @@ import { useState } from 'react'
 import FuelBadge from './FuelBadge'
 import CrowdBadge from './CrowdBadge'
 import HistoryModal from './HistoryModal'
-import { timeAgo, toBengaliNumber } from '../utils'
+import { timeAgo, toBengaliNumber } from '../src/utils'
 
 export default function StationCard({ station }) {
   const { name, location, latestUpdate } = station
