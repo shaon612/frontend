@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* বাংলা ফন্ট সেটআপ */
+* {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+}
+
+/* কাস্টম স্ক্রলবার */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #16a34a;
+  border-radius: 3px;
+}
+
+/* পেজ লোড অ্যানিমেশন */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-fade-in {
+  animation: fadeIn 0.45s ease-out both;
+}
+
+/* কার্ড হোভার ইফেক্ট */
+.station-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.station-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ব্যাজ পালস - জ্বালানি আছে এমন ব্যাজের জন্য */
+@keyframes badge-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(22, 163, 74, 0);  }
+}
+.badge-available {
+  animation: badge-pulse 2.5s infinite;
+}
