@@ -1,5 +1,5 @@
 // ভিড়ের ব্যাজ কম্পোনেন্ট - ভিড়ের পরিমাণ দেখায়
-import { getCrowdInfo } from '../utils'
+import { getCrowdInfo } from '../src/utils'
 
 export default function CrowdBadge({ crowd }) {
   const info = getCrowdInfo(crowd)
