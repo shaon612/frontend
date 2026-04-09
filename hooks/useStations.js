@@ -1,6 +1,6 @@
 // কাস্টম হুক - পাম্পের তথ্য লোড করার জন্য (প্রতি ৬০ সেকেন্ডে স্বয়ংক্রিয় রিফ্রেশ)
 import { useState, useEffect, useCallback } from 'react'
-import { fetchStations } from '../api'
+import { fetchStations } from '../src/api'
 
 export function useStations() {
   const [stations, setStations]   = useState([])
