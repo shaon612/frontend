@@ -1,7 +1,7 @@
 // ইতিহাস মডাল - একটি পাম্পের আগের আপডেটগুলো দেখায়
 import { useState, useEffect } from 'react'
-import { fetchStationHistory } from '../api'
-import { formatDateTime, getCrowdInfo, FUEL_TYPES } from '../utils'
+import { fetchStationHistory } from '../src/api'
+import { formatDateTime, getCrowdInfo, FUEL_TYPES } from '../src/utils'
 
 export default function HistoryModal({ station, onClose }) {
   const [history, setHistory] = useState([])
