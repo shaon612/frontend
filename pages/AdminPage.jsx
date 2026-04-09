@@ -1,9 +1,9 @@
 // অ্যাডমিন পেজ - পাম্প যোগ করা, সম্পাদনা করা ও পরিচালনা
 import { useState, useEffect } from 'react'
 import toast from 'react-hot-toast'
-import { fetchStations, updateStation } from '../api'
+import { fetchStations, updateStation } from '../../src/api'
 import StationFormModal from '../components/StationFormModal'
-import { timeAgo, toBengaliNumber } from '../utils'
+import { timeAgo, toBengaliNumber } from '../../src/utils'
 
 export default function AdminPage() {
   const [stations,    setStations]    = useState([])
