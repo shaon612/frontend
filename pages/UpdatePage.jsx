@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import toast from 'react-hot-toast'
-import { fetchStations, submitUpdate } from '../api'
-import { FUEL_TYPES, CROWD_CONFIG } from '../utils'
+import { fetchStations, submitUpdate } from '../src/api'
+import { FUEL_TYPES, CROWD_CONFIG } from '../src/utils'
 
 // ভিড়ের অপশনগুলো
 const CROWD_OPTIONS = [
